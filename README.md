@@ -2,7 +2,6 @@
 <h3 align="center">Software Engineer</h3>
 
 - 🔭 I’m currently working full time software engineer at Dromos SAS
-- 🌱 I’m currently learning **NestJS**
 - 💬 Ask me about **Backend development**
 
 - 📫 How to reach me **sandovalbgasantiago@gmail.com**
