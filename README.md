@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Santiago Sandoval</h1>
-<h3 align="center">Software Engineer</h3>
+<h3 align="center">{ Software Engineer }</h3>
 
 - 🔭 I’m currently working full time software engineer at Dromos SAS
 - 💬 Ask me about **Backend development**
