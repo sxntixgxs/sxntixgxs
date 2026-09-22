@@ -1,52 +1,52 @@
-## Buenas! Soy Santiago Sandoval <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="40" />
+## Hi! I'm Santiago Sandoval <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="40" />
 
 ⚡ **Full-Stack Software Engineer** · TypeScript · React · Node.js · Bogotá, Colombia 🇨🇴
 
-Llevo casi tres años construyendo aplicaciones en producción que usan **800+ personas en cuatro empresas industriales**. Me gusta ser dueño de los módulos de principio a fin: levantar requerimientos con los usuarios de finanzas, RR. HH. o compras, modelar los datos, implementar, desplegar y dar soporte en producción. Mi foco está en que el software haga el trabajo aburrido para que la gente no tenga que hacerlo.
+I've spent nearly three years building production applications used by **800+ people across four industrial companies**. I like owning modules end to end: gathering requirements with finance, HR and purchasing teams, modeling the data, implementing, deploying and supporting it in production. My focus is making software do the tedious work so people don't have to.
 
-- 💼 Hasta agosto de 2026 fui Full-Stack Software Engineer en **Dromos Pavimentos S.A.S.**, en un equipo de tres desarrolladores atendiendo a Dromos Pavimentos, Incominería, Laboratorio Ingestrac y Drominc.
-- 🎓 Estudiando Ingeniería de Software en la Corporación Universitaria Iberoamericana.
-- 🤖 Me interesa la IA aplicada: extracción estructurada de documentos, tool calling y asistentes internos con telemetría de costo y latencia.
-- 🌎 Español · English
+- 💼 Until August 2026 I was a Full-Stack Software Engineer at **Dromos Pavimentos S.A.S.**, on a three-developer team serving Dromos Pavimentos, Incominería, Laboratorio Ingestrac and Drominc.
+- 🎓 Studying Software Engineering at Corporación Universitaria Iberoamericana.
+- 🤖 Into applied AI: structured document extraction, tool calling and internal assistants with cost and latency telemetry.
+- 🌎 Spanish · English
 
 <br>
 
-### 📊 Impacto en producción
+### 📊 Production impact
 
-| Flujo | Antes | Después |
+| Workflow | Before | After |
 | --- | --- | --- |
-| 🧾 Procesamiento de facturas (multi-empresa) | 10–15 días | **3–4 días** |
-| 🧮 Tiempo de tarea contable por factura | 2–3 horas | **4–5 minutos** |
-| 💸 Anticipos: de la solicitud al pago | 2–3 días | **30–60 minutos** |
-| 🤝 Vinculación de proveedores y clientes | 10–20 días | **2–3 días** |
-| 🚌 Costos de transporte de empleados | — | **−40%** |
+| 🧾 Invoice processing (multi-company) | 10–15 days | **3–4 days** |
+| 🧮 Accounting task time per invoice | 2–3 hours | **4–5 minutes** |
+| 💸 Cash advances: request to payment | 2–3 days | **30–60 minutes** |
+| 🤝 Supplier and customer onboarding | 10–20 days | **2–3 days** |
+| 🚌 Employee transportation costs | — | **−40%** |
 
 <br>
 
-### 🧰 Qué he construido
+### 🧰 What I've built
 
-- **Flujo de facturas multi-empresa**: ingesta de correos con Microsoft Graph, parseo de XML de la DIAN, revisiones por rol y seguimiento de pagos.
-- **Anticipos y cajas menores**: aprobaciones, desembolsos, saldos, reversiones y conciliación con facturas, con operaciones idempotentes.
-- **Vinculación de proveedores y clientes**: formularios con autoguardado, firmas, evaluación de riesgo, documentos condicionales y revisiones en paralelo, integrado con **SIESA ERP**.
-- **Middleware biométrico** en Python/FastAPI que conecta dispositivos **ZKTeco** con los horarios del personal: turnos nocturnos, marcaciones duplicadas, tolerancias y horas extra.
-- **Sincronización de inventario**: 100.000+ registros por empresa de SIESA/SQL Server a PostgreSQL, incremental y programada.
-- **IA aplicada**: pipeline con LLM para extraer datos del RUT colombiano y un asistente interno vía **OpenRouter** con streaming, tool calling, selección de modelo y telemetría de tokens, costo y latencia.
+- **Multi-company invoice workflow**: Microsoft Graph email ingestion, DIAN XML parsing, role-based reviews and payment tracking.
+- **Cash advances and petty cash**: approvals, disbursements, balances, reversals and invoice reconciliation, with idempotent operations.
+- **Supplier and customer onboarding**: autosaved forms, signatures, risk assessments, conditional documents and parallel reviews, integrated with **SIESA ERP**.
+- **Biometric middleware** in Python/FastAPI connecting **ZKTeco** devices to staff schedules: overnight shifts, duplicate punches, tolerances and overtime.
+- **Inventory sync**: scheduled, incremental sync of 100,000+ records per company from SIESA/SQL Server to PostgreSQL.
+- **Applied AI**: an LLM pipeline that extracts structured data from Colombian RUT tax documents, and an internal assistant on **OpenRouter** with streaming, tool calling, model selection and token, cost and latency telemetry.
 
 <br>
 
-### 🚀 Proyecto destacado
+### 🚀 Featured project
 
 <table>
   <tr>
     <td>
       <h4>🧾 <a href="https://github.com/sxntixgxs/lab-trxckin">Lab Trxckin</a></h4>
-      <p>Versión pública, con datos de demostración, de una plataforma de operaciones financieras para un grupo de empresas colombianas. Lee facturas electrónicas de la DIAN directamente desde buzones de Microsoft 365, las pasa por un flujo de aprobación con control de SLA y se las entrega a contabilidad para causación. También gestiona anticipos y cajas menores.</p>
+      <p>A public, demo-data version of a finance operations platform for a group of Colombian companies. It pulls DIAN e-invoices straight from Microsoft 365 mailboxes, routes them through an approval workflow with SLA tracking, and hands them to accounting. It also runs cash advances and petty cash.</p>
       <ul>
-        <li>📥 Ingesta programada con <b>Microsoft Graph</b> y parseo de XML UBL (<code>AttachedDocument</code> de la DIAN)</li>
-        <li>✅ Aprobaciones con devoluciones, notas crédito y SLA en horas hábiles (festivos de Colombia)</li>
-        <li>💸 Anticipos: solicitud → jefe directo → contabilidad → gerencia → tesorería → legalización</li>
-        <li>🔐 Permisos por rol y ruta, multi-empresa e impersonación de administradores</li>
-        <li>🧪 Tests con Vitest y <code>convex-test</code>, CI en GitHub Actions</li>
+        <li>📥 Scheduled ingestion with <b>Microsoft Graph</b> and UBL XML parsing (DIAN <code>AttachedDocument</code>)</li>
+        <li>✅ Approvals with returns, credit notes and business-hours SLAs (Colombian holidays)</li>
+        <li>💸 Cash advances: request → direct manager → accounting → management → treasury → legalization</li>
+        <li>🔐 Role- and route-based permissions, multi-company access and admin impersonation</li>
+        <li>🧪 Tests with Vitest and <code>convex-test</code>, CI on GitHub Actions</li>
       </ul>
       <p>
         <img src="https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
@@ -64,25 +64,9 @@ Llevo casi tres años construyendo aplicaciones en producción que usan **800+ p
 
 <br>
 
-### 📈 Mis stats en GitHub
-<br>
+### 🛠️ Tech I use most
 
-<div align="center">
-  <img height="150em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=sxntixgxs&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  <img height="150em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=sxntixgxs&layout=compact&langs_count=7&theme=dracula&include_all_commits=true&count_private=true"/>
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=sxntixgxs&theme=dracula&hide_border=true" alt="GitHub streak" />
-</div>
-
-<br>
-
-### 🛠️ Tecnologías y Herramientas que más uso
-
-**Lenguajes**
+**Languages**
 <div align="center">
   <!-- TypeScript -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/>
@@ -104,7 +88,7 @@ Llevo casi tres años construyendo aplicaciones en producción que usan **800+ p
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="40" height="40"/>
 </div>
 
-**Backend y bases de datos**
+**Backend and databases**
 <div align="center">
   <!-- Node.js -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="40" height="40"/>
@@ -120,7 +104,7 @@ Llevo casi tres años construyendo aplicaciones en producción que usan **800+ p
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="Prisma" width="40" height="40"/>
 </div>
 
-**Infraestructura y entrega**
+**Infrastructure and delivery**
 <div align="center">
   <!-- Docker -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40" height="40"/>
@@ -149,7 +133,7 @@ Llevo casi tres años construyendo aplicaciones en producción que usan **800+ p
 
 <br>
 
-### 🫂 Conectemos
+### 🫂 Let's connect
 <div align="center">
   <a href="https://www.linkedin.com/in/santiagosandovalt/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:santiagosandovalt@hotmail.com"><img src="https://img.shields.io/badge/-Email-%230078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white"></a>
@@ -159,5 +143,5 @@ Llevo casi tres años construyendo aplicaciones en producción que usan **800+ p
 <br>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=sxntixgxs&label=Visitas%20al%20perfil&color=bd93f9&style=flat" alt="Visitas al perfil" />
+  <img src="https://komarev.com/ghpvc/?username=sxntixgxs&label=Profile%20views&color=bd93f9&style=flat" alt="Profile views" />
 </div>
