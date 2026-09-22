@@ -4,7 +4,7 @@
 
 I've spent nearly three years building production applications used by **800+ people across four industrial companies**. I like owning modules end to end: gathering requirements with finance, HR and purchasing teams, modeling the data, implementing, deploying and supporting it in production. My focus is making software do the tedious work so people don't have to.
 
-- 💼 Until August 2026 I was a Full-Stack Software Engineer at **Dromos Pavimentos S.A.S.**, on a three-engineers team serving Dromos Pavimentos, Incominería, Laboratorio Ingestrac and Drominc.
+- 💼 Until August 2026 I was a Full-Stack Software Engineer at **Dromos Pavimentos S.A.S.**, on a engineers team serving Dromos Pavimentos, Incominería, Laboratorio Ingestrac and Drominc.
 - 🎓 Studying Software Engineering.
 - 🤖 Into applied AI: structured document extraction, tool calling and internal assistants with cost and latency telemetry.
 - 🌎 Spanish · English
